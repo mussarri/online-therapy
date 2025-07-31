@@ -12,16 +12,16 @@ export default function UserDashboardLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { user, logout } = useAuth();
-  const router = useRouter();
+  // const { user, logout } = useAuth();
+  // const router = useRouter();
 
-  useEffect(() => {
-    if (!user) return;
-    if (user.role !== "user") {
-      alert("Bu alana erişiminiz yok");
-      router.push("/");
-    }
-  }, [user]);
+  // useEffect(() => {
+  //   if (!user) return;
+  //   if (user.role !== "user") {
+  //     alert("Bu alana erişiminiz yok");
+  //     router.push("/");
+  //   }
+  // }, [user]);
 
   return (
     <div className="flex">

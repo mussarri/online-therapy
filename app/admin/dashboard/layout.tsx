@@ -12,16 +12,16 @@ export default function AdminDashboardLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { user, logout } = useAuth();
-  const router = useRouter();
+  // const { user, logout } = useAuth();
+  // const router = useRouter();
 
-  useEffect(() => {
-    if (!user) return;
-    if (user.role !== "admin") {
-      alert("Sadece yöneticiler erişebilir");
-      router.push("/");
-    }
-  }, [user]);
+  // useEffect(() => {
+  //   if (!user) return;
+  //   if (user.role !== "admin") {
+  //     alert("Sadece yöneticiler erişebilir");
+  //     router.push("/");
+  //   }
+  // }, [user]);
 
   return (
     <div className="flex">
